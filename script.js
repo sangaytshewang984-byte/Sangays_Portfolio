@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Typing Animation Subtitle
-const subtitles = ["Web Developer", "Digital Marketer", "Teacher", "Fab Lab Manager", "Creator"];
+const subtitles = ["Web Developer", "Digital Marketer", "Teacher", "Fab Lab Manager", "Freelancer"];
 let typedIdx = 0, charIdx = 0, typingForward = true;
 function typeSubtitle() {
   const el = document.getElementById("typed");
