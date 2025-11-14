@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Portfolio</title>
+  <!-- Orbitron and Share Tech Mono from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div class="header-spacer"></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="profile-info">
+        <img src="assets\profile.png" alt="Your Name" class="profile-img"/>
+        <div>
+          <h1>Sangay Tshewang</h1>
+          <p class="subtitle"><span id="typed"></span></p>
+        </div>
+        <button id="darkModeToggle" title="Toggle Light/Dark Mode">🌙</button>
+      </div>
+      
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Hi, I'm <span class="accent">Sangay</span></h2>
+      <p class="hero-tagline">Here, you will walk through m experiences and hobbies</p>
+      <a href="assets\Resume.pdf" download class="resume-btn"><i class="fa fa-download"></i> Download Resume</a>
+    </div>
+  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm passionate about crafting beautiful, impactful web experiences.<br><br>
+        <strong>Experience:</strong>
+        <ul class="experience-list">
+          <li>
+            <i class="fas fa-bullhorn"></i>
+            <strong>Digital Marketing Specialist</strong><br>
+            Skilled in SEO, campaign strategy, analytics, and social media for business growth and brand building.
+          </li>
+          <li>
+            <i class="fas fa-chalkboard-teacher"></i>
+            <strong>Teacher & Fab Lab Manager</strong><br>
+            Led creative technology, digital fabrication, and coding workshops. Managed Fab Lab operations, mentored innovators, and inspired student projects.
+          </li>
+        </ul>
+        <br>
+        I love learning new tools, sharing knowledge, and building solutions that make an impact. Let's connect!
+      </p>
+      <div class="skills-wrap">
+        <div class="skill-bar" data-skill="HTML" data-percent="95"><span>HTML</span><div class="bar"></div></div>
+        <div class="skill-bar" data-skill="CSS" data-percent="90"><span>CSS</span><div class="bar"></div></div>
+        <div class="skill-bar" data-skill="JavaScript" data-percent="87"><span>JavaScript</span><div class="bar"></div></div>
+        <div class="skill-bar" data-skill="React" data-percent="80"><span>React</span><div class="bar"></div></div>
+      </div>
+      <div class="about-social">
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="react">React</button>
+      </div>
+      <div class="project-list">
+        <div class="project-card" data-tech="javascript">
+          <img src="assets/sample-project.png" alt="Project One" class="project-img"/>
+          <div class="project-content">
+            <h3>JS Project</h3>
+            <p>Vanilla JavaScript app with cool interactivity.</p>
+            <a href="#" target="_blank" class="project-link">View More</a>
+          </div>
+        </div>
+        <div class="project-card" data-tech="react">
+          <img src="assets/sample-project.png" alt="Project Two" class="project-img"/>
+          <div class="project-content">
+            <h3>React Project</h3>
+            <p>Modern React SPA, built for scale.</p>
+            <a href="#" target="_blank" class="project-link">View More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <div id="formMessage"></div>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com"><i class="fa fa-envelope"></i> Email</a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </section>
+  </main>
+  <button id="backToTop"><i class="fa fa-arrow-up"></i></button>
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
